@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOAPP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<!-- 
+    <div class="form-group">
+        <h1>Todo with TypeScript</h1>
+        <br/>
+        <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-4">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
+                    <input type="text" class="form-control" placeholder="New Task" id="todoName">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
+                    <input type="text" class="form-control" placeholder="Description" id="todoDescription">
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
+        <br/>
+        <input type="button" id="add" value="Add new ToDo" class="btn btn btn-primary" />
+    </div> -->
+
+    <div class="holder">
+        <div class="left">
+            <h3>Uncompleted Tasks</h3> 
+            <!-- <p>It is a long established fact that a reader will be distracted by the readable content 
+                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
+                making it look like readable English. Many desktop publishing packages and web page editors now 
+                use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                 sites still in their infancy. Various versions have evolved over 
+                the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> 
+        -->
+
+        <div id="todoList"></div>
+        </div>
+        <div class="center">
+            <input type="checkbox" id="show">
+            <label for="show" class="show-btn">Add Task</label>
+            <div class="container">
+               <label for="show" class="close-btn fas fa-times" title="close"></label>
+               <div class="text">
+                  TODOAPP
+               </div>
+               <form action="#">
+                  <div class="data">
+                     <label>Task Name:</label>
+                     <input type="text" required placeholder="Task..." id="todoName">
+                  </div>
+                  <div class="data">
+                    <label>Date:</label>
+                    <input type="date" required id="todoDate">
+                 </div>
+                  <div class="data">
+                     <label>Description:</label>
+                     <input type="text" required placeholder="Task Description..." id="todoDescription">
+                  </div>
+                  <div class="btn">
+                     <div class="inner"></div>
+                     <button type="submit" id="add">Add Task</button>
+                  </div>
+               </form>
+            </div>
+        </div>
+        <div class="right">
+            <h3>Completed Tasks</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content 
+                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
+                making it look like readable English. Many desktop publishing packages and web page editors now 
+                use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                 sites still in their infancy. Various versions have evolved over 
+                the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p> 
+
+        </div>
+    
+    </div>
+    
+    
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
