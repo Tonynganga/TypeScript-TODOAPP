@@ -5,10 +5,10 @@ form {
     text-align: center;
     padding-bottom: 25px;
 }
-#todoList {
+/* #todoList {
     margin: 0 auto;
     width: 500px;
-}
+} */
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -20,9 +20,11 @@ form {
   font-family: 'Poppins', sans-serif;
 }
 body{
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  /* background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%); */
 }
 .show-btn{
   background: #fff;
@@ -153,9 +155,139 @@ form .signup-link a:hover{
 .holder{
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px 10px 50px;
+    margin: 10px 0 0 20px;
 }
 .left, .right{
-    /* border: 20px solid black; */
     width: 33%;
+}
+
+
+.app h1{
+  color: white;
+  font-size: 40px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: .5rem .5rem 0 0;
+  background-color: #de3f53;
+  font-family: 'Rajdhani', sans-serif;
+}
+::placeholder{
+  color: #fff;
+}
+.title-date{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+#title{
+  color: #fff;
+  width: 40%;
+}
+#date{
+  width: fit-content;
+}
+.desc-btn{
+  margin: 15px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.app form{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #262e4c;
+}
+.app form input{
+  border: none;
+  background-color: #3c4979;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+  width: 90%;
+}
+
+.app form button{
+  border: none;
+  color: #fff;
+  background-color: #1dd2af;
+  font-weight: 600;
+  font-size: 25px;
+  height: 42px;
+  width: 10%;
+}
+.content{
+  margin: 35px 0 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.app ul{
+  list-style: none;
+  color: #e0e0e0;
+  padding: 0;
+}
+.app ul li{
+  padding: 10px;
+  background-color: #262e4c;
+  border-bottom: 1px solid #3a4674;
+}
+.upper{
+  display: flex;
+  justify-content: space-between;
+}
+.check{
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  -webkit-appearance: none;
+}
+.check:checked{
+  background-color: #1dd2af;
+}
+.task{
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  padding: 0 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  /* color: #fff; */
+}
+.task1{
+  margin: 8px 0 0 0;
+  font-size: 18px;
+  padding: 5px 10px 10px 10px;
+  width: fit-content;
+  background: transparent;
+  border: none;
+  /* color: #fff; */
+}
+.trash{
+  float: right;
+  cursor: pointer;
+  width: 25px;
+  margin: 10px 10px 0 0;
+  height: 25px;
+}
+.task:focus{
+  outline: none;
+}
+
+.app ul li i{
+  float: right;
+  cursor: pointer;
+}
+.trash:hover{
+  color: rgb(255, 82, 82);
+
+}
+.task-holder{
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin: 15px 0 0 0;
 }
