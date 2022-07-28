@@ -5,11 +5,6 @@ form {
     text-align: center;
     padding-bottom: 25px;
 }
-/* #todoList {
-    margin: 0 auto;
-    width: 500px;
-} */
-
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -47,8 +42,7 @@ body{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
+}
 input[type="checkbox"]{
   display: none;
 }
@@ -160,7 +154,15 @@ form .signup-link a:hover{
 .left, .right{
     width: 33%;
 }
-
+.right{
+  margin: 0 10px 0 0;
+}
+#msg{
+  margin: 20px 0 0 0;
+  color: red;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .app h1{
   color: white;

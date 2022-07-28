@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ts-form-validation": "^2.2.0"
+  }
+}
